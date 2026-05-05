@@ -199,16 +199,30 @@ body{font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;background:
 .final-cta{padding:clamp(80px,12vw,140px) 0;text-align:center;background:linear-gradient(180deg,transparent,rgba(36,180,255,0.04));border-top:1px solid var(--border);position:relative;overflow:hidden}
 .final-cta::before{content:'';position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:600px;height:600px;background:radial-gradient(circle,rgba(36,180,255,0.06) 0%,transparent 70%);pointer-events:none}
 .cta-content{position:relative;z-index:1;max-width:640px;margin:0 auto}
+.cta-shield{width:80px;height:80px;margin:0 auto 28px;background:linear-gradient(135deg,rgba(36,180,255,0.12),rgba(0,217,255,0.06));border:1px solid rgba(0,217,255,0.25);border-radius:50%;display:flex;align-items:center;justify-content:center;animation:shieldPulse 3s ease-in-out infinite}
+.cta-shield svg{color:var(--cyan)}
+@keyframes shieldPulse{0%,100%{box-shadow:0 0 0 0 rgba(36,180,255,0.2)}50%{box-shadow:0 0 0 16px rgba(36,180,255,0)}}
 .cta-content h2{font-size:clamp(28px,5vw,48px);font-weight:800;letter-spacing:-1.5px;margin-bottom:16px;line-height:1.1}
 .cta-content p{font-size:16px;color:var(--text2);line-height:1.8;margin-bottom:40px}
 .btn-cta{padding:18px 48px;font-size:18px;border-radius:14px}
 
 /* FOOTER */
-.footer{background:linear-gradient(180deg,var(--bg2),rgba(5,8,20,0.95));border-top:1px solid var(--border);padding:32px 0;text-align:center}
-.footer-content{display:flex;align-items:center;justify-content:center;gap:16px;flex-wrap:wrap}
-.footer-link{color:var(--text2);text-decoration:none;font-size:13px;transition:color .3s;font-weight:500}
-.footer-link:hover{color:var(--blue)}
-.footer-divider{color:var(--muted);font-weight:300}
+.footer{background:linear-gradient(180deg,var(--bg2),#060a16);border-top:1px solid var(--border);padding:0}
+.footer-top{display:grid;grid-template-columns:1.2fr 2fr;gap:clamp(40px,6vw,80px);padding:clamp(48px,8vw,80px) 0 clamp(40px,6vw,64px);border-bottom:1px solid var(--border)}
+.footer-brand{max-width:320px}
+.footer-logo{display:flex;align-items:center;gap:12px;text-decoration:none;margin-bottom:20px}
+.footer-logo img{height:44px;width:auto;filter:drop-shadow(0 0 8px rgba(36,180,255,0.3))}
+.footer-logo span{font-size:15px;font-weight:800;letter-spacing:.8px;background:linear-gradient(135deg,#24b4ff,#00D9FF);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.footer-tagline{font-size:14px;color:var(--text2);line-height:1.7}
+.footer-links-group{display:grid;grid-template-columns:repeat(3,1fr);gap:32px}
+.footer-col h4{font-size:13px;font-weight:700;color:var(--text);text-transform:uppercase;letter-spacing:1px;margin-bottom:20px}
+.footer-col .footer-link{display:block;font-size:14px;color:var(--text2);text-decoration:none;padding:6px 0;transition:all .3s;font-weight:500}
+.footer-col .footer-link:hover{color:var(--cyan);transform:translateX(4px)}
+.footer-bottom{display:flex;justify-content:space-between;align-items:center;padding:24px 0;flex-wrap:wrap;gap:16px}
+.footer-bottom p{font-size:13px;color:var(--muted);font-weight:500}
+.footer-badges{display:flex;gap:16px}
+.footer-badge{display:flex;align-items:center;gap:6px;font-size:11px;font-weight:700;color:var(--cyan);text-transform:uppercase;letter-spacing:.5px;padding:6px 14px;background:rgba(0,217,255,0.06);border:1px solid rgba(0,217,255,0.15);border-radius:6px}
+.footer-badge svg{width:12px;height:12px;flex-shrink:0}
 
 /* LANGUAGE SELECTOR */
 .language-selector{position:fixed;bottom:24px;right:24px;z-index:1000}
@@ -272,6 +286,8 @@ body::-webkit-scrollbar-thumb:hover{background:var(--blue)}
   .step-connector{transform:rotate(90deg);padding:0}
   .proof-grid{grid-template-columns:1fr}
   .proof-card.proof-large{grid-row:auto;min-height:300px}
+  .footer-top{grid-template-columns:1fr;gap:40px}
+  .footer-brand{max-width:100%}
 }
 @media(max-width:768px){
   .stats-grid{grid-template-columns:repeat(2,1fr)}
@@ -291,6 +307,9 @@ body::-webkit-scrollbar-thumb:hover{background:var(--blue)}
   .hero-float-badge-2{left:8px;bottom:8px}
   .service-img{height:140px}
   .step-img{height:130px}
+  .footer-links-group{grid-template-columns:1fr;gap:24px}
+  .footer-bottom{flex-direction:column;text-align:center}
+  .footer-badges{justify-content:center}
 }
 @media(max-width:480px){
   .stats-grid{grid-template-columns:repeat(2,1fr);gap:12px}
