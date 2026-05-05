@@ -57,7 +57,12 @@
     <main>
         <!-- HERO -->
         <section class="hero">
+            <div class="hero-bg-grid"></div>
             <div class="hero-glow"></div>
+            <div class="hero-particles">
+                <span class="h-particle"></span><span class="h-particle"></span><span class="h-particle"></span>
+                <span class="h-particle"></span><span class="h-particle"></span><span class="h-particle"></span>
+            </div>
             <div class="container">
                 <div class="hero-grid">
                     <div class="hero-left">
@@ -73,8 +78,20 @@
                     </div>
                     <div class="hero-right">
                         <div class="hero-image-wrapper">
-                            <img src="https://images.pexels.com/photos/60504/security-hacker-hack-cyber-60504.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Cybersecurity Dashboard" class="hero-image">
+                            <div class="hero-image-frame">
+                                <img src="https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Cybersecurity Shield Dashboard" class="hero-image">
+                                <div class="hero-image-border"></div>
+                                <div class="hero-image-scanline"></div>
+                            </div>
                             <div class="hero-image-glow"></div>
+                            <div class="hero-float-badge hero-float-badge-1">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
+                                <span>Protected</span>
+                            </div>
+                            <div class="hero-float-badge hero-float-badge-2">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                                <span>Real-Time</span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -102,21 +119,25 @@
                 </div>
                 <div class="services-grid">
                     <div class="service-card">
+                        <div class="service-img"><img src="https://images.pexels.com/photos/8370752/pexels-photo-8370752.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Wallet Recovery"></div>
                         <div class="service-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></div>
                         <h3>Wallet Recovery</h3>
                         <p>Advanced cryptographic recovery for lost, locked, or inaccessible cryptocurrency wallets across all major blockchains.</p>
                     </div>
                     <div class="service-card">
+                        <div class="service-img"><img src="https://images.pexels.com/photos/8566473/pexels-photo-8566473.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Transaction Resolution"></div>
                         <div class="service-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div>
                         <h3>Transaction Resolution</h3>
                         <p>Resolve stuck, failed, or delayed blockchain transactions with accelerated processing and expert intervention.</p>
                     </div>
                     <div class="service-card">
+                        <div class="service-img"><img src="https://images.pexels.com/photos/73910/digital-technology-concept-73910.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Asset Protection"></div>
                         <div class="service-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
                         <h3>Asset Protection</h3>
                         <p>Proactive monitoring and defense systems that safeguard your digital assets against unauthorized access and exploits.</p>
                     </div>
                     <div class="service-card">
+                        <div class="service-img"><img src="https://images.pexels.com/photos/5775852/pexels-photo-5775852.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Smart Contract Monitoring"></div>
                         <div class="service-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg></div>
                         <h3>Smart Contract Monitoring</h3>
                         <p>Real-time surveillance of smart contract interactions with automated threat detection and vulnerability alerts.</p>
@@ -157,6 +178,7 @@
                 <div class="steps-grid">
                     <div class="step-card">
                         <div class="step-number">01</div>
+                        <div class="step-img"><img src="https://images.pexels.com/photos/7862604/pexels-photo-7862604.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Connect & Analyze"></div>
                         <div class="step-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg></div>
                         <h3>Connect & Analyze</h3>
                         <p>Link your wallet and let our diagnostic engine scan for issues, vulnerabilities, and transaction anomalies.</p>
@@ -164,6 +186,7 @@
                     <div class="step-connector"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
                     <div class="step-card">
                         <div class="step-number">02</div>
+                        <div class="step-img"><img src="https://images.pexels.com/photos/5380643/pexels-photo-5380643.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Detect Issues"></div>
                         <div class="step-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div>
                         <h3>Detect Issues</h3>
                         <p>Our AI identifies the root cause of your problem with precision, mapping out the optimal recovery path.</p>
@@ -171,6 +194,7 @@
                     <div class="step-connector"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
                     <div class="step-card">
                         <div class="step-number">03</div>
+                        <div class="step-img"><img src="https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Secure & Recover"></div>
                         <div class="step-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg></div>
                         <h3>Secure & Recover</h3>
                         <p>Execute the resolution with military-grade encryption, restoring your assets and securing your wallet.</p>
@@ -188,15 +212,15 @@
                 </div>
                 <div class="proof-grid">
                     <div class="proof-card proof-large">
-                        <img src="https://images.pexels.com/photos/5380643/pexels-photo-5380643.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Security Operations Center">
+                        <img src="https://images.pexels.com/photos/325229/pexels-photo-325229.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Security Operations Center">
                         <div class="proof-overlay"><h4>24/7 Security Operations Center</h4><p>Real-time monitoring across all blockchain networks</p></div>
                     </div>
                     <div class="proof-card">
-                        <img src="https://images.pexels.com/photos/8566473/pexels-photo-8566473.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Blockchain Analytics">
+                        <img src="https://images.pexels.com/photos/8438980/pexels-photo-8438980.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Blockchain Analytics Dashboard">
                         <div class="proof-overlay"><h4>Blockchain Analytics</h4><p>Advanced threat intelligence</p></div>
                     </div>
                     <div class="proof-card">
-                        <img src="https://images.pexels.com/photos/7234169/pexels-photo-7234169.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Encrypted Infrastructure">
+                        <img src="https://images.pexels.com/photos/7234169/pexels-photo-7234169.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Encrypted Infrastructure">
                         <div class="proof-overlay"><h4>Encrypted Infrastructure</h4><p>Military-grade protocols</p></div>
                     </div>
                 </div>
